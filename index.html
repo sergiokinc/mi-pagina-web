@@ -1,60 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mi</title>
+    <title>Sobre Mí</title>
 </head>
 <body>
-    <h1>ACERCA DE MI.</h1>
-    <h2>Nombre: Sergio Aguiar.</h2>
-    <p>Mi objetivo es convertirme en un profesional en el mundo de la programación. Actualmente, tengo conocimientos básicos, pero estoy decidido a seguir aprendiendo y mejorando mis habilidades. La programación es un campo en constante evolución, y quiero ser parte de esa innovación, creando soluciones tecnológicas que impacten positivamente en la sociedad.</p>
+    <header>
+        <h1>ACERCA DE MÍ</h1>
+        <h2>Nombre: Sergio Aguiar</h2>
+    </header>
 
-    <p>Por ahora, estoy enfocado en dominar los fundamentos de HTML, ya que es la base para el desarrollo web. Aunque sé que el camino será desafiante, estoy motivado a explorar otros lenguajes y herramientas que me permitan crecer como programador. Mi meta es no solo escribir código, sino también entender cómo cada línea contribuye a construir algo significativo y funcional.</p>
+    <section>
+        <h2>Mi Objetivo</h2>
+        <p>
+            Mi objetivo es convertirme en un profesional en el mundo de la programación. Actualmente, tengo conocimientos básicos, pero estoy decidido a seguir aprendiendo y mejorando mis habilidades. La programación es un campo en constante evolución, y quiero ser parte de esa innovación, creando soluciones tecnológicas que impacten positivamente en la sociedad.
+        </p>
+        <p>
+            Por ahora, estoy enfocado en dominar los fundamentos de HTML, ya que es la base para el desarrollo web. Aunque sé que el camino será desafiante, estoy motivado a explorar otros lenguajes y herramientas que me permitan crecer como programador. Mi meta es no solo escribir código, sino también entender cómo cada línea contribuye a construir algo significativo y funcional.
+        </p>
+    </section>
 
-    <img src="./img/FotoPerfil.jpeg" alt="Foto de perfil" width="300" height="400">
-    <a href https://www.instagram.com/sergio_aguiar21/ target="_blank">Instagram</a>
-    <a href=" https://github.com/sergiokinc" target="_blank">GitHub</a>
+    <section>
+        <h2>Foto de Perfil</h2>
+        <img src="./img/FotoPerfil.jpeg" alt="Foto de perfil" width="300" height="400">
+    </section>
 
-    <ul>
-        <li>Escuchar música</li>
-        <li>Comer</li>
-        <li>Manejar moto</li>
-    </ul>
+    <section>
+        <h2>Enlaces</h2>
+        <p>
+            <a href="https://www.instagram.com/sergio_aguiar21/" target="_blank">Instagram</a> | 
+            <a href="https://github.com/sergiokinc" target="_blank">GitHub</a>
+        </p>
+    </section>
 
-    <h1>Mis Tareas Pendientes</h1>
-    <ol>
-        <li>Estudiar más</li>
-        <li>Practicar inglés</li>
-        <li>Hacer oficio</li>
-    </ol>
+    <section>
+        <h2>Mis Pasatiempos</h2>
+        <ul>
+            <li>Escuchar música</li>
+            <li>Comer</li>
+            <li>Manejar moto</li>
+        </ul>
+    </section>
 
-    <h1>Horario Semanal</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Día</th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miércoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sábado</th>
-                <th>Domingo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Actividades</th>
-                <td>Estudiar más</td>
-                <td>Practicar inglés</td>
-                <td>Hacer oficio</td>
-                <td>Estudiar más</td>
-                <td>Practicar inglés</td>
-                <td>Manejar moto</td>
-                <td>Escuchar música</td>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <h2>Mis Tareas Pendientes</h2>
+        <ol>
+            <li>Estudiar más</li>
+            <li>Practicar inglés</li>
+            <li>Hacer oficio</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Horario Semanal</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Actividades</th>
+                    <td>Estudiar más</td>
+                    <td>Practicar inglés</td>
+                    <td>Hacer oficio</td>
+                    <td>Estudiar más</td>
+                    <td>Practicar inglés</td>
+                    <td>Manejar moto</td>
+                    <td>Escuchar música</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer style="text-align: center;">
+        <h2>Formulario de Contacto</h2>
+        <p style="text-align: center;">Si deseas contactarme, por favor completa el siguiente formulario:</p>
+        <form action="#" method="post" style="display: inline-block; text-align: left;">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required><br><br>
+
+            <label for="descripcion">¿Por qué deseas contactarme?</label><br>
+            <textarea id="descripcion" name="descripcion" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
 </body>
 </html>
